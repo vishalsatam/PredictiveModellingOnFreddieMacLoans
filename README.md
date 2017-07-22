@@ -11,7 +11,7 @@ This is a repository the submission of Assignment 2 for Team 1
 
 ## Execution Instructions
 
-###Pull the image
+### Pull the image
 
 ```
 docker pull vishalsatam1988/midterm
