@@ -11,13 +11,13 @@ This is a repository the submission of Assignment 2 for Team 1
 
 ## Execution Instructions
 
-###Pull the image
+### Pull the image
 
 ```
 docker pull vishalsatam1988/midterm
 ```
 
-###Part 1 - Summarization and EDA
+### Part 1 - Summarization and EDA
 
 Run the summarization script
 ```
@@ -37,7 +37,8 @@ View results in Jupyter Notebook - Open /src/midterm/EDANotebooks/Part1EDA
 docker run -it -d -p 8888:8888 vishalsatam1988/midterm /bin/bash -c 'jupyter notebook --no-browser --allow-root --ip=* --NotebookApp.password="$PASSWD" "$@"'
 ```
 
-###Part 2 - Prediction and Classification for a Single Quarter
+### Part 2 - Prediction and Classification
+####  for a Single Quarter
 
 Run the script to analyze (train, test) on one quarter
 ```
@@ -57,7 +58,7 @@ View the resulting evaluation csv for prediction and classificaction using the j
 docker run -it -d -p 8888:8888 vishalsatam1988/midterm /bin/bash -c 'jupyter notebook --no-browser --allow-root --ip=* --NotebookApp.password="$PASSWD" "$@"'
 ```
 
-### Prediction and Classification for Multiple Quarter
+#### Prediction and Classification for Multiple Quarter
 
 ```
 docker run -it vishalsatam1988/midterm sh /src/midterm/runPart2Multiple.sh <username> <password> <startquarteryear> <endquarteryear>
