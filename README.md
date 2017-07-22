@@ -37,7 +37,8 @@ View results in Jupyter Notebook - Open /src/midterm/EDANotebooks/Part1EDA
 docker run -it -d -p 8888:8888 vishalsatam1988/midterm /bin/bash -c 'jupyter notebook --no-browser --allow-root --ip=* --NotebookApp.password="$PASSWD" "$@"'
 ```
 
-### Part 2 - Prediction and Classification for a Single Quarter
+### Part 2
+#### Prediction and Classification for a Single Quarter
 
 Run the script to analyze (train, test) on one quarter
 ```
@@ -57,7 +58,7 @@ View the resulting evaluation csv for prediction and classificaction using the j
 docker run -it -d -p 8888:8888 vishalsatam1988/midterm /bin/bash -c 'jupyter notebook --no-browser --allow-root --ip=* --NotebookApp.password="$PASSWD" "$@"'
 ```
 
-### Prediction and Classification for Multiple Quarter
+#### Prediction and Classification for Multiple Quarter
 
 Run the script to analyze (train, test) on multiple quarters
 ```
