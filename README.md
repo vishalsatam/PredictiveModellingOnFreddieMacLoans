@@ -21,10 +21,10 @@ docker pull vishalsatam1988/midterm
 
 Run the summarization script
 ```
-docker run -it vishalsatam1988/midterm sh /src/midterm/runPart1.sh <username> <password> <startyear> <endyear>
+docker run -it vishalsatam1988/midterm sh /src/midterm/runPart1.sh "<username>" "<password>" <startyear> <endyear>
 ```
 ```
-Eg : docker run -it vishalsatam1988/midterm sh /src/midterm/runPart1.sh satam.v@husky.neu.edu Eq=yF?f3 2005 2016
+Eg : docker run -it vishalsatam1988/midterm sh /src/midterm/runPart1.sh "satam.v@husky.neu.edu" "Eq=yF?f3" 2005 2016
 ```
 
 Commit the running container
@@ -41,10 +41,10 @@ docker run -it -d -p 8888:8888 vishalsatam1988/midterm /bin/bash -c 'jupyter not
 
 Run the script to analyze (train, test) on one quarter
 ```
-docker run -it vishalsatam1988/midterm sh /src/midterm/runPart2Single.sh <username> <password> <quarteryear>
+docker run -it vishalsatam1988/midterm sh /src/midterm/runPart2Single.sh "<username>" "<password>" <quarteryear>
 ```
 ```
-Eg : docker run -it vishalsatam1988/midterm sh /src/midterm/runPart2Single.sh satam.v@husky.neu.edu Eq=yF?f3 Q12005
+Eg : docker run -it vishalsatam1988/midterm sh /src/midterm/runPart2Single.sh "satam.v@husky.neu.edu" "Eq=yF?f3" Q12005
 ```
 Commit the image
 ```
@@ -61,10 +61,10 @@ docker run -it -d -p 8888:8888 vishalsatam1988/midterm /bin/bash -c 'jupyter not
 
 Run the script to analyze (train, test) on multiple quarters
 ```
-docker run -it vishalsatam1988/midterm sh /src/midterm/runPart2Multiple.sh <username> <password> <startquarteryear> <endquarteryear>
+docker run -it vishalsatam1988/midterm sh /src/midterm/runPart2Multiple.sh "<username>" "<password>" <startquarteryear> <endquarteryear>
 ```
 ```
-Eg : docker run -it vishalsatam1988/midterm sh /src/midterm/runPart2Multiple.sh satam.v@husky.neu.edu Eq=yF?f3 Q11999 Q12016
+Eg : docker run -it vishalsatam1988/midterm sh /src/midterm/runPart2Multiple.sh "satam.v@husky.neu.edu" "Eq=yF?f3" Q11999 Q12016
 ```
 
 Commit the image
