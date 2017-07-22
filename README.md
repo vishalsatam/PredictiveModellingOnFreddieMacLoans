@@ -59,7 +59,7 @@ docker run -it -d -p 8888:8888 vishalsatam1988/midterm /bin/bash -c 'jupyter not
 ```
 
 #### Prediction and Classification for Multiple Quarter
-
+Run the script to analyze (train, test) on one multiple quarters
 ```
 docker run -it vishalsatam1988/midterm sh /src/midterm/runPart2Multiple.sh <username> <password> <startquarteryear> <endquarteryear>
 ```
