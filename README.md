@@ -51,9 +51,11 @@ Commit the image
 ```
 docker commit <containerid> vishalsatam1988/midterm
 ```
+The error metrics for the data can be found at /src/midterm/data/
 View the resulting evaluation csv for prediction and classificaction using the jupyter notebook 
 * Prediction - /src/midterm/EDANotebooks/EvaluationOfPredictionMatrix
 * Classification - /src/midterm/EDANotebooks/EvaluationOfPredictionMatrix
+Password to open the Jupyter Notebook is "keras"
 ```
 docker run -it -d -p 8888:8888 vishalsatam1988/midterm /bin/bash -c 'jupyter notebook --no-browser --allow-root --ip=* --NotebookApp.password="$PASSWD" "$@"'
 ```
@@ -72,10 +74,11 @@ Commit the image
 ```
 docker commit <containerid> vishalsatam1988/midterm
 ```
-
+The error metrics for the data can be found at /src/midterm/data/
 View the resulting evaluation csv for prediction and classificaction using the jupyter notebook 
 * Prediction - /src/midterm/EDANotebooks/EvaluationOfPredictionMatrix
 * Classification - /src/midterm/EDANotebooks/EvaluationOfPredictionMatrix
+Password to open the Jupyter Notebook is "keras"
 ```
 docker run -it -d -p 8888:8888 vishalsatam1988/midterm /bin/bash -c 'jupyter notebook --no-browser --allow-root --ip=* --NotebookApp.password="$PASSWD" "$@"'
 ```
